@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bimbel Jasmani & lari JB ACADEMYY</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Background gelap utama */
+            color: #e0e0e0; /* Teks terang untuk kontras */
+        }
+        header {
+            background: linear-gradient(135deg, #0d4f3c 0%, #1e3a8a 100%); /* Gradien hijau-biru gelap untuk header */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about {
+            text-align: center;
+            background-color: #2a2a2a; /* Background gelap untuk section */
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .about img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .promo {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0d4f3c 100%); /* Gradien biru-hijau gelap */
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .promo h2 {
+            color: #00ff88; /* Aksen hijau terang */
+        }
+        .programs {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .benefit{
+            width: 100%;
+            flex-basis: 100%;
+            background-color: #333;
+            display: block;
+            padding: 20px;
+            border-radius: 10px;
+            
+
+        }
+        .benefit p {
+            display: block;
+            margin: 6px 0;
+            color:white
+         }
+     
+        .program {
+            width: 100%;
+            min-width: 100px;
+            margin: 30px;
+            background-color: #333; /* Background gelap untuk program */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .program img {
+            width: 40%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .program h3 {
+            margin-top: 10px;
+            color: #00ff88; /* Aksen hijau */
+        }
+        .biaya{
+            background: linear-gradient(135deg, #1e3a8a 0%, #0d4f3c 100%); /* Gradien biru-hijau gelap */
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .biaya h4 {
+             margin-top: 10px;
+            color: #000000; 
+        }
+        .biaya img {
+            width: 250px;
+            gap: 10px;
+            height: auto;
+            border-radius: 8px;
+
+        }
+        .scan{
+           
+            padding: 40px;
+            text-align: center;
+            
+            
+            
+        }
+        .scan h5{
+            margin-top: 10px;
+            font-size: 18px;
+            color: #000000;
+        }
+        .scan img.barcode{
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 10px auto
+        }
+        
+        
+        button {
+            background: linear-gradient(135deg, #00ff88 0%, #1e3a8a 100%); /* Gradien hijau-biru */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        button:hover {
+            background: linear-gradient(135deg, #1e3a8a 0%, #00ff88 100%); /* Hover efek terbalik */
+        }
+        footer {
+            background-color: #0d0d0d; /* Gelap lebih pekat */
+            color: #e0e0e0;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin:0;
+        }
+        @media (max-width: 768px) {
+            .programs {
+                flex-direction: column;
+            }
+            .program {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di JB ACADEMYY!</h1>
+        <p>Temukan kegembiraan olahraga lari dan tingkatkan kebugaran Anda dengan bimbel jasmani kami.</p>
+        <button onclick="scrollToPromo()">Pelajari Lebih Lanjut</button>
+    </header>
+
+    <section class="about">
+        <h2>Apa Itu Lari?</h2>
+        <img src="IMG_2568.PNG" alt="Foto Orang Lari"> <!-- Gambar nyata orang lari dari Unsplash -->
+        <p>Lari adalah salah satu olahraga paling sederhana dan efektif untuk menjaga kesehatan. Ini membantu meningkatkan daya tahan kardiovaskular, membakar kalori, dan mengurangi stres. Baik untuk pemula maupun atlet profesional, lari bisa dilakukan di mana saja – di taman, jalanan, atau treadmill. Mulai dari jogging ringan hingga marathon, lari membawa manfaat luar biasa bagi tubuh dan pikiran Anda.</p>
+        <p><strong>Fakta Menarik:</strong> Lari dapat meningkatkan suasana hati dengan melepaskan endorfin, hormon kebahagiaan. Orang yang rutin lari memiliki risiko penyakit jantung lebih rendah hingga 40%!</p>
+       
+        <P>Kami hadir di KOTA BINJAI untuk membantu teman" yang baru mau lari namun ingin memiliki progres dan program. dan kami  juga hadir untuk membantu teman" CASIS untuk persiapan Kesamaptaan jasmani saat tes TNI/POLRI ataupun sekolah kedinasan</P>
+    </section>
+
+    <section class="promo">
+        <h2>Program bimbel kami</h2>
+        <p>Kami menyediakan bimbingan jasmani khusus untuk olahraga lari. Dengan pelatih berpengalaman, program kami dirancang untuk membantu Anda mencapai tujuan kebugaran. Dari teknik dasar hingga latihan intensif, kami siap mendampingi Anda!</p>
+        <p><strong>Keuntungan:</strong> Jadwal fleksibel, latihan personal, dan diskon untuk pendaftar PELAJAR. Hubungi kami untuk info lebih lanjut!</p>
+        
+        <div class="programs">
+            <div class="program">
+                <img src="IMG_2571.PNG" alt="Program Samapta"> <!-- Tetap placeholder, ganti jika perlu -->
+                <h3>Program Samapta</h3>
+                <p>Mau seperti mereka?mereka adalah alumni academyy kami. program ini Untuk mempersiapkan fisik tes tni polri kedinasan, yang berfokus kekuatan fisik dan kecepatan lari yang didalamnya diajarkan dari dasar sampai target terbaik dengan program terstruktur baik untuk LARI 12 MENIT,PUSHUP,PULLUP,SITUP,SHUTTLE RUN, DAN JUGA RENANG dan diberi motivasi serta tips" saat test.</p>
+              
+                <p> Jangan Biarkan Kesempatan Berlalu!
+                    dengan program ini, anda akan memiliki panduan lengkap dan mendetail untuk meraih kesuksesan maksimal dalam tes kesamaptaan 
+                </p>
+            </div>
+            <div class="program">
+                <img src="IMG_2569.PNG" alt="Program Lanjutan"> <!-- Tetap placeholder, ganti jika perlu -->
+                <h3>Program MARATHON</h3>
+                <p> Pogram ini dirancang untuk kamu yang ingin ikut event marathon namun tidak tahu mau mulai darimana, kami hadir untuk membantu kamu agar mendapatkan target yang kamu inginkan dengan program perorangan yang terlatih dan tidak overtraining .</p>
+                    AYO GABUNG! agar virgin marathonmu mendapatkan waktu terbaik
+            </div>
+             <div class="program">
+                <img src="IMG_2570.PNG" alt="Program Samapta"> <!-- Tetap placeholder, ganti jika perlu -->
+                <h3>Program long</h3>
+                <p>program ini Untuk mempersiapkan fisik tes tni polri kedinasan, yang berfokus hanya pada lari dan dan penguatan tidak termasuk program renang.</p>
+            </div>
+            
+    <section class="program benefit">
+            <div class="benefit">
+            <h3>BENEFIT YANG DIDAPATKAN </h3>
+            <p>1.Panduan latihan terstruktur.</p>
+            <P>2.Teknik khusus setiap elemen tes </P>
+            <p>3.Strategi meningkatkan performa</p>
+            <p>4.Stategi saat race ataupun tes</p>
+            <p>5.Diajarkan cara mengatur pace ketika race</p>
+            <p>6.Personal trainer dengan pemantauan tiap mingguunya</p>
+            </div>
+        </section>
+     <section class="biaya">
+        <h4>GALERI</h4>
+        <p> kami hadir untuk membantu teman-teman dari semua kalangan untuk hidup sehat
+          <div class="foto-biaya">
+            <img src="gambar1jb.jpg" alt="poto1"> 
+            <img src="gambar2jb.jpg" alt="poto2"> 
+            <img src="gambar3jb.jpg" alt="poto3"> 
+            <img src="gambar4jb.jpg" alt="poto4"> 
+          </section> 
+
+     <section class="scan">
+        <div class="kode">
+        <h5>LINK DAFTAR</h5>
+        <img src="code.jpg" alt="barcode" class="barcode">
+        <p>scan barcode diatas ini untuk melakukan pendaftaran dan melihat harga paket. Atau tekan tombol dibawah ini untuk menghubungi admin </p>
+        </div>
+     
+
+      
+        <button onclick="openWhatsApp()">Daftar Sekarang</button> <!-- Fungsi diubah -->
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 JB ACADEMYY. Semua hak dilindungi. | Kontak: achmadhsb031004@contoh.com | Telepon: 0823-7473-5105</p>
+    </footer>
+
+    <script>
+        function scrollToPromo() {
+            document.querySelector('.promo').scrollIntoView({ behavior: 'smooth' });
+        }
+        function openWhatsApp() {
+            // Ganti 6281234567890 dengan nomor WhatsApp Anda (format internasional tanpa +)
+            var phoneNumber = "6282374735105"; // Contoh: 6281234567890
+            var message = "Halo, saya ingin mendaftar  paket program lari!"; // Pesan default
+            var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+            window.location.href = url; // Membuka WhatsApp
+        }
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,33 @@
+.biaya{
+    text-align: center;
+}
+.biaya img{
+    width: 200px;
+    height: auto;
+    display: block;
+     margin: 0 auto 15px auto;
+    }
+
+    .foto-biaya{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 15px;
+    }
+    .foto-biaya img{
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        
+    }
+    .benefit{
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+    .benefit p{
+        display: block;
+        margin: 6px 0;
+        color:white
+    }
